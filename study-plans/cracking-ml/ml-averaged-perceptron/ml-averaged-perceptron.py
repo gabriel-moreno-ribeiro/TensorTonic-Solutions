@@ -17,19 +17,18 @@ def averaged_perceptron(X: list, y: list, lr: float, epochs: int) -> dict:
             if y[i] * (X[i] @ w + b) <= 0:
                 w += lr * y[i] * X[i]
                 b += lr * y[i]
-            # accumulate after every sample visit
             w_sum += w
             b_sum += b
             count += 1
     
     w_avg = w_sum / count
-    b_avg = float(b_sum / count)
+    b_avg = b_sum / count
     
     test_scores = X @ w_avg + b_avg
-    preds = np.where(test_scores > 0, 1, -1).tolist()
+    preds = [1 if s > 0 else -1 for s in test_scores.tolist()]
     
     return {
-        "weights": [round(float(v), 4) for v in w_avg.tolist()],
-        "bias": round(b_avg, 4),
-        "predictions": [int(p) for p in preds]
+        "weights": [float(round(v, 4)) for v in w_avg.tolist()],
+        "bias": float(round(float(b_avg), 4)),
+        "predictions": preds
     }
