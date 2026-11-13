@@ -9,9 +9,11 @@ def knn_classifier(X_train: list, y_train: list, X_test: list, k: int) -> list:
     preds = []
     for x in X_test:
         dists = np.sqrt(np.sum((X_train - x)**2, axis=1))
-        idx = np.argsort(dists)[:k]
+        # stable sort preserves original index order for equal distances
+        idx = np.argsort(dists, kind='stable')[:k]
         neighbors = y_train[idx]
-        counts = Counter(neighbors)
-        pred = max(counts, key=lambda c: (counts[c], -c))
+        counts = Counter(neighbors.tolist())
+        # ties broken by smallest label
+        pred = min(counts, key=lambda c: (-counts[c], c))
         preds.append(int(pred))
     return preds
