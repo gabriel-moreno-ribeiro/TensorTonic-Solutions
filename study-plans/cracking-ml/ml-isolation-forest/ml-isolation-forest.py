@@ -20,7 +20,7 @@ def isolation_forest(X: list, n_estimators: int = 100, max_samples: int = 256, s
         varying = [j for j in range(d) if pts[:, j].min() < pts[:, j].max()]
         if not varying:
             return s
-        j = varying[rng.randint(0, len(varying))]
+        j = int(rng.choice(varying))
         lo, hi = pts[:, j].min(), pts[:, j].max()
         t = rng.uniform(lo, hi)
         left = pts[pts[:, j] < t]
@@ -28,8 +28,8 @@ def isolation_forest(X: list, n_estimators: int = 100, max_samples: int = 256, s
         return {'j': j, 't': t, 'l': build_tree(left, depth+1), 'r': build_tree(right, depth+1)}
     
     def path_length(node, x, depth):
-        if isinstance(node, (int, float)):
-            return depth + c(node)  # add c(leaf_size)
+        if isinstance(node, int):
+            return depth + c(node)
         if x[node['j']] < node['t']:
             return path_length(node['l'], x, depth+1)
         return path_length(node['r'], x, depth+1)
