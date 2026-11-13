@@ -52,6 +52,7 @@ Verified machine learning implementations completed on [TensorTonic](https://www
 | Vector Projection | The vector projection of u onto v is the component of u that lies exactly along the direction of v. | https://www.tensortonic.com/problems/la-vector-projection |
 | Whitening Transform | Center and whiten a data matrix so the transformed features have zero mean and identity covariance. | https://www.tensortonic.com/problems/la-whitening |
 | Averaged Perceptron | Implement an averaged perceptron for binary classification with online mistake updates and mean weights across training steps. | https://www.tensortonic.com/problems/ml-averaged-perceptron |
+| Bagging Classifier | Build a bagging classifier from scratch using bootstrap-sampled CART trees and majority-vote predictions. | https://www.tensortonic.com/problems/ml-bagging-classifier |
 | Decision Tree Classifier (CART) | Implement a CART decision tree classifier with Gini impurity splits, depth limits, and majority-class leaf predictions. | https://www.tensortonic.com/problems/ml-cart-classifier |
 | Decision Tree Regressor | Implement a CART regression tree with MSE reduction splits, stopping criteria, and mean-value leaf predictions. | https://www.tensortonic.com/problems/ml-cart-regressor |
 | Gaussian Naive Bayes | Implement Gaussian Naive Bayes with class priors, per-feature Gaussian likelihoods, and log-probability predictions. | https://www.tensortonic.com/problems/ml-gaussian-naive-bayes |
