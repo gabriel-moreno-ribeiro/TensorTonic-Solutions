@@ -62,6 +62,7 @@ Verified machine learning implementations completed on [TensorTonic](https://www
 | Gaussian Naive Bayes | Implement Gaussian Naive Bayes with class priors, per-feature Gaussian likelihoods, and log-probability predictions. | https://www.tensortonic.com/problems/ml-gaussian-naive-bayes |
 | Gradient Boosted Regressor | Build gradient boosted regression trees that fit sequential residuals and combine learners with a configurable learning rate. | https://www.tensortonic.com/problems/ml-gbr |
 | Gaussian Mixture Models (EM) | Implement a diagonal-covariance Gaussian Mixture Model using EM updates for responsibilities, means, variances, and mixture weights. | https://www.tensortonic.com/problems/ml-gmm |
+| Missing Value Imputation | Impute missing numeric values with column-wise mean, median, or most-frequent statistics while preserving observed values. | https://www.tensortonic.com/problems/ml-imputation |
 | Isolation Forest | Implement Isolation Forest anomaly detection with random partition trees and path-length based anomaly scores. | https://www.tensortonic.com/problems/ml-isolation-forest |
 | K-Fold Cross-Validation | Implement deterministic K-fold cross-validation with shuffled splits, held-out evaluation, and aggregated model scores. | https://www.tensortonic.com/problems/ml-kfold-cv |
 | K-Means Clustering | Implement K-means clustering with nearest-centroid assignments, centroid updates, convergence checks, and stable labels. | https://www.tensortonic.com/problems/ml-kmeans |
