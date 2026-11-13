@@ -13,13 +13,14 @@ def pca(X: list, n_components: int = 2) -> tuple:
     vecs = vecs[:, idx]
     
     # Orient each eigenvector: make largest-abs-value loading positive
+    # np.argmax chooses first on tie
     for j in range(vecs.shape[1]):
         col = vecs[:, j]
-        sign = np.sign(col[np.argmax(np.abs(col))])
-        if sign < 0:
-            vecs[:, j] *= -1
+        max_idx = np.argmax(np.abs(col))
+        if col[max_idx] < 0:
+            vecs[:, j] = -col
     
-    # Project
+    # Project onto n_components
     proj = Xc @ vecs[:, :n_components]
     ratio = vals[:n_components] / vals.sum()
     
