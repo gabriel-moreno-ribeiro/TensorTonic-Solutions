@@ -62,6 +62,7 @@ Verified machine learning implementations completed on [TensorTonic](https://www
 | Gradient Boosted Regressor | Build gradient boosted regression trees that fit sequential residuals and combine learners with a configurable learning rate. | https://www.tensortonic.com/problems/ml-gbr |
 | Gaussian Mixture Models (EM) | Implement a diagonal-covariance Gaussian Mixture Model using EM updates for responsibilities, means, variances, and mixture weights. | https://www.tensortonic.com/problems/ml-gmm |
 | Isolation Forest | Implement Isolation Forest anomaly detection with random partition trees and path-length based anomaly scores. | https://www.tensortonic.com/problems/ml-isolation-forest |
+| K-Fold Cross-Validation | Implement deterministic K-fold cross-validation with shuffled splits, held-out evaluation, and aggregated model scores. | https://www.tensortonic.com/problems/ml-kfold-cv |
 | K-Means Clustering | Implement K-means clustering with nearest-centroid assignments, centroid updates, convergence checks, and stable labels. | https://www.tensortonic.com/problems/ml-kmeans |
 | K-Means++ Initialization | Implement K-means++ initialization by sampling centroids according to squared distance from the nearest chosen center. | https://www.tensortonic.com/problems/ml-kmeans-plusplus |
 | KNN Classifier | Implement K-nearest neighbors classification using Euclidean distance, majority voting, and deterministic tie-breaking. | https://www.tensortonic.com/problems/ml-knn-classifier |
