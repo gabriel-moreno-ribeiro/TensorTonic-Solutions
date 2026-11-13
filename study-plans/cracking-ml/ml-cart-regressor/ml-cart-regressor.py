@@ -13,7 +13,7 @@ def best_split(X, y):
             left = y[lmask]; right = y[~lmask]
             if len(left) == 0 or len(right) == 0: continue
             gain = m - (len(left)/n * mse(left) + len(right)/n * mse(right))
-            if round(gain, 10) > round(best_gain, 10):
+            if round(gain, 6) > round(best_gain, 6):
                 best_gain = gain; best_feat = j; best_thresh = float(t)
     return best_feat, best_thresh
 
