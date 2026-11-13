@@ -9,11 +9,12 @@ def kmeans_plusplus(X: list, k: int, seed: int = 42) -> list:
     centroids = [X[first]]
     
     for _ in range(k - 1):
-        # Recompute D^2 to nearest centroid
-        dists = np.array([
-            min(np.sum((x - c)**2) for c in centroids)
-            for x in X
-        ])
+        # Vectorized D^2
+        C = np.array(centroids)  # shape (m, d)
+        # dists[i] = min over centroids of squared distance
+        diffs = X[:, None, :] - C[None, :, :]  # (n, m, d)
+        sq = np.sum(diffs**2, axis=2)  # (n, m)
+        dists = sq.min(axis=1)  # (n,)
         probs = dists / dists.sum()
         idx = rng.choice(n, p=probs)
         centroids.append(X[idx])
