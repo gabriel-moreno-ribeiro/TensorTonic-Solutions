@@ -138,6 +138,7 @@ Verified machine learning implementations completed on [TensorTonic](https://www
 | Tile and Diff | Tile a 2-D array vertically and return the tiled result alongside its row-wise finite differences, packed as a (2, m·reps, n) float64 array. | https://www.tensortonic.com/problems/numpy-tile-diff |
 | Winsorize | Winsorization clips extreme values in each column to percentile-based bounds, a standard technique for suppressing outliers in ML preprocessing. | https://www.tensortonic.com/problems/numpy-winsorize |
 | Zeros and Ones | Create a two-dimensional float64 NumPy array of a requested shape filled entirely with zeros or ones. | https://www.tensortonic.com/problems/numpy-zeros-ones |
+| Minimum of an Axis-Aligned Paraboloid | Compute the coordinates and objective value at the minimum of an axis-aligned convex paraboloid. | https://www.tensortonic.com/problems/optim-paraboloid-minimum |
 | Minimum of a Univariate Quadratic | Compute the minimizer and minimum value of a strictly convex univariate quadratic from its coefficients. | https://www.tensortonic.com/problems/optim-quadratic-minimum |
 
 View my verified ML profile: [TensorTonic profile](https://www.tensortonic.com/profile/me58)
