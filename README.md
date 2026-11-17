@@ -21,6 +21,36 @@ Verified machine learning implementations completed on [TensorTonic](https://www
 
 | Problem | Description | Link |
 |---|---|---|
+| Continuity of Activation Functions | Classify continuity and nondifferentiable points for common activation functions at supplied scalar inputs. | https://www.tensortonic.com/problems/calculus-activation-continuity |
+| Derivatives of Common Activation Functions | Compute the analytical derivative of four activation functions: Sigmoid, Tanh, ReLU, and Swish. | https://www.tensortonic.com/problems/calculus-activation-derivatives |
+| Backpropagation Through a Computation Graph | Run forward evaluation and reverse-mode backpropagation through a supplied scalar computation graph. | https://www.tensortonic.com/problems/calculus-backprop-graph |
+| Chain Rule Through a 3-Layer Network | Apply the chain rule through a three-layer scalar network to compute intermediate activations and parameter gradients. | https://www.tensortonic.com/problems/calculus-chain-rule-3layer |
+| Directional Derivative & Steepest Descent Direction | Compute a quadratic loss gradient, its directional derivative, and the normalized steepest-descent direction. | https://www.tensortonic.com/problems/calculus-directional-derivative |
+| Forward-Mode Autodiff with Dual Numbers | Implement forward-mode automatic differentiation with dual numbers carrying both values and derivatives. | https://www.tensortonic.com/problems/calculus-dual-number-autodiff |
+| Expected Value via Numerical Integration | Approximate expected values with numerical integration when a probability density has no convenient closed form. | https://www.tensortonic.com/problems/calculus-expected-value-integration |
+| Gradient of Multivariate Gaussian Log-PDF | Compute the gradient of a multivariate Gaussian log density with respect to its mean vector. | https://www.tensortonic.com/problems/calculus-gaussian-mean-gradient |
+| Gradient Descent on a Non-Convex Loss | Run gradient descent on a nonconvex scalar loss and report the optimization path and final stationary behavior. | https://www.tensortonic.com/problems/calculus-gd-nonconvex |
+| Finite Difference Gradient Checking | Estimate scalar derivatives with forward, backward, and central finite differences and compare their numerical errors. | https://www.tensortonic.com/problems/calculus-gradient-check |
+| Gradient Clipping: Global Norm Rescaling | Compute the global gradient norm, rescale all gradients if the norm exceeds the threshold. | https://www.tensortonic.com/problems/calculus-gradient-clipping |
+| Hessian Matrix & Convexity of Linear Regression Loss | Construct the linear-regression loss Hessian and determine convexity from its eigenvalues. | https://www.tensortonic.com/problems/calculus-hessian-convexity |
+| Jacobian of a Vector-Valued Polynomial | Implement Jacobian of a Vector-Valued Polynomial, and return a 3x3 list of lists, with each entry rounded to 6 decimals. | https://www.tensortonic.com/problems/calculus-jacobian-computation |
+| Jacobian of a Neural Network Layer | Implement Jacobian of a Neural Network Layer, and compute both analytically and via finite differences. | https://www.tensortonic.com/problems/calculus-jacobian-layer |
+| JVP and VJP for a 2-Layer Network | Compute Jacobian-vector and vector-Jacobian products through a two-layer ReLU network without forming the full Jacobian. | https://www.tensortonic.com/problems/calculus-jvp-vjp |
+| KL Divergence: Discrete and Continuous | Compute discrete KL divergence and compare numerical versus closed-form KL for univariate Gaussian distributions. | https://www.tensortonic.com/problems/calculus-kl-divergence |
+| Lagrange Multipliers: Regularization as Constrained Optimization | Show that L2 regularization and constrained optimization (bounding the weight norm) produce the same solution. | https://www.tensortonic.com/problems/calculus-lagrange-regularization |
+| Gradient of Multivariate Linear Regression Loss | Compute the multivariate linear-regression sum-of-squared-errors gradient with respect to weights and bias. | https://www.tensortonic.com/problems/calculus-linreg-gradient |
+| Higher-Order Derivatives & Loss Curvature | Compute first and second derivatives for MSE, cross-entropy, and Huber losses to compare their local curvature. | https://www.tensortonic.com/problems/calculus-loss-curvature |
+| Limit of a Learning Rate Schedule | Evaluate the long-run limit of an inverse-time learning-rate schedule from its initial rate and decay constant. | https://www.tensortonic.com/problems/calculus-lr-schedule-limit |
+| Learning Rate Stability & Convergence Bounds | Derive the maximum stable learning rate for a quadratic objective and classify convergence from the chosen rate. | https://www.tensortonic.com/problems/calculus-lr-stability |
+| Gradient of a Matrix-Valued Function | Differentiate every entry of a polynomial matrix-valued function and return its derivative matrix at a scalar point. | https://www.tensortonic.com/problems/calculus-matrix-function-gradient |
+| Area Under the ROC Curve via Trapezoidal Rule | Compute ROC curve points and area under the curve with threshold ordering and trapezoidal integration. | https://www.tensortonic.com/problems/calculus-roc-auc |
+| Second-Order Partial Derivatives | Compute both pure second-order partial derivatives of a supplied bivariate polynomial at a requested point. | https://www.tensortonic.com/problems/calculus-second-order-partials |
+| Sigmoid Boundedness via Squeeze Theorem | Verify sigmoid bounds numerically with a squeeze-theorem construction and expose its saturation behavior. | https://www.tensortonic.com/problems/calculus-sigmoid-squeeze |
+| Softmax + Cross-Entropy Gradient | Compute the softmax probabilities, the cross-entropy loss, and the gradient two ways. | https://www.tensortonic.com/problems/calculus-softmax-ce-gradient |
+| Softmax Numerical Stability & Log-Sum-Exp | Implement both naive softmax and the numerically stable version using the log-sum-exp trick. | https://www.tensortonic.com/problems/calculus-softmax-stability |
+| Subgradients for Non-Smooth Functions | Compute valid subgradients for absolute value, ReLU, and maximum functions at smooth and nonsmooth points. | https://www.tensortonic.com/problems/calculus-subgradients |
+| Taylor Approximation of a Loss Landscape | Build first-order (linear) and second-order (quadratic) Taylor approximations of a loss function at a given point. | https://www.tensortonic.com/problems/calculus-taylor-approximation |
+| Hessian Tensor of a Vector-Valued Function | Compute the full Hessian tensor for a three-output polynomial function of three scalar variables. | https://www.tensortonic.com/problems/calculus-vector-valued-hessian |
 | Implement Dot Product | Implement the dot product of equal-length numeric vectors by summing element-wise products without library shortcuts. | https://www.tensortonic.com/problems/dot-product |
 | Cholesky Decomposition | Factor a symmetric positive-definite NumPy matrix into a lower-triangular matrix and its transpose. | https://www.tensortonic.com/problems/la-cholesky |
 | Implement Cosine Similarity | Compute cosine similarity between NumPy vectors with explicit handling for zero-norm inputs. | https://www.tensortonic.com/problems/la-cosine-similarity |
@@ -108,6 +138,7 @@ Verified machine learning implementations completed on [TensorTonic](https://www
 | Tile and Diff | Tile a 2-D array vertically and return the tiled result alongside its row-wise finite differences, packed as a (2, m·reps, n) float64 array. | https://www.tensortonic.com/problems/numpy-tile-diff |
 | Winsorize | Winsorization clips extreme values in each column to percentile-based bounds, a standard technique for suppressing outliers in ML preprocessing. | https://www.tensortonic.com/problems/numpy-winsorize |
 | Zeros and Ones | Create a two-dimensional float64 NumPy array of a requested shape filled entirely with zeros or ones. | https://www.tensortonic.com/problems/numpy-zeros-ones |
+| Minimum of a Univariate Quadratic | Compute the minimizer and minimum value of a strictly convex univariate quadratic from its coefficients. | https://www.tensortonic.com/problems/optim-quadratic-minimum |
 
 View my verified ML profile: [TensorTonic profile](https://www.tensortonic.com/profile/me58)
 <!-- tensortonic:end -->
