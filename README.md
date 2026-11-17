@@ -138,6 +138,7 @@ Verified machine learning implementations completed on [TensorTonic](https://www
 | Tile and Diff | Tile a 2-D array vertically and return the tiled result alongside its row-wise finite differences, packed as a (2, m·reps, n) float64 array. | https://www.tensortonic.com/problems/numpy-tile-diff |
 | Winsorize | Winsorization clips extreme values in each column to percentile-based bounds, a standard technique for suppressing outliers in ML preprocessing. | https://www.tensortonic.com/problems/numpy-winsorize |
 | Zeros and Ones | Create a two-dimensional float64 NumPy array of a requested shape filled entirely with zeros or ones. | https://www.tensortonic.com/problems/numpy-zeros-ones |
+| Batch vs Stochastic vs Mini-Batch GD | Compare how different batch sizes affect gradient descent on linear regression, and return a list of loss curves (one per batch size). | https://www.tensortonic.com/problems/optim-batch-vs-sgd |
 | Convex Polytope Membership | Test whether a query point satisfies every linear inequality defining a convex polytope. | https://www.tensortonic.com/problems/optim-convex-set-membership |
 | Convexity Certificate via the Hessian | Certify convexity of a twice-differentiable objective by checking whether its Hessian is positive semidefinite. | https://www.tensortonic.com/problems/optim-convexity-certificate |
 | Classify a Critical Point from the Hessian | Classify a stationary point as a minimum, maximum, or saddle from the eigenvalues of its Hessian. | https://www.tensortonic.com/problems/optim-critical-point-classification |
